@@ -2,6 +2,10 @@
 
 > Magento2 an open-source e-commerce platform written in PHP.
 
+> Newsletter publishing on regular basis is considered one to the most effective technique for marketing.
+
+> Adobe Commerce provide us this ability to push & share newsletters to customers & collect traffics to the store. Also, manage your list of subscribers.
+
 > In this extension we are adding custom fields like firstname, lastname & Date of Birth (DOB) in the Newsletter Subscription fields. Also, we have saved this fields value in database.
 
 Wondering how to achieve that? Don't worry we have got the solution for it.
