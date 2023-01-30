@@ -1,0 +1,73 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Newsletter\Block\Subscribe $block */
+?>
+<div class="block newsletter">
+    <div class="title"><strong><?= $block->escapeHtml(__('Newsletter')) ?></strong></div>
+    <div class="content">
+        <form class="form subscribe"
+               novalidate
+               action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
+               method="post"
+               data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+               id="newsletter-validate-detail">
+               <div class="field newsletter">
+                <label for="newsletter">
+                        <span class="label">
+                        <?= $block->escapeHtml(__('Sign Up for Our Newsletter:')) ?>
+                        </span>
+                </label>
+                  <div class="control">
+                     
+                        <div class="news_main">
+                           <div class="left-sec">
+                              <div class="col-md-6">
+                                 <input name="firstname" type="text" id="firstname"
+                                    placeholder="<?= $block->escapeHtmlAttr(__('Enter your First Name')) ?>"
+                                    data-mage-init='{"mage/trim-input":{}}'
+                                    data-validate="{required:true}"
+                                    />
+                              </div>
+                              <div class="col-md-6">
+                                 <input name="lastname" type="text" id="lastname"
+                                    placeholder="<?= $block->escapeHtmlAttr(__('Enter your Last Name')) ?>"
+                                    data-mage-init='{"mage/trim-input":{}}'
+                                    data-validate="{required:true}"
+                                    />
+                              </div>
+                           </div>
+                           <div class="right-sec">
+                              <div class="col-md-6 date_field">
+                                 <input name="dob" type="text" id="dob"
+                                    placeholder="<?= $block->escapeHtmlAttr(__('Enter your Date of Birth')) ?>"
+                                    data-mage-init='{"mage/trim-input":{}}'
+                                    data-validate="{required:false}"
+                                    onfocus="(this.type='date')" onblur="(this.type='text')"
+                                    />
+                              </div>
+                              <div class="col-md-6">
+                                 <input name="email" type="email" id="newsletter"
+                                    placeholder="<?= $block->escapeHtmlAttr(__('Enter your email address')) ?>"
+                                    data-mage-init='{"mage/trim-input":{}}'
+                                    data-validate="{required:true, 'validate-email':true}"
+                                    />
+                              </div>
+                           </div>
+                        </div>
+                  </div> 
+               </div>
+               <div class="actions">
+                  <button class="action subscribe primary"
+                     title="<?= $block->escapeHtmlAttr(__('Subscribe')) ?>"
+                     type="submit"
+                     aria-label="Subscribe">
+                  <span><?= $block->escapeHtml(__('Subscribe')) ?></span>
+                  </button>
+               </div>
+            </form>
+    </div>
+</div>
