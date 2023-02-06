@@ -35,7 +35,10 @@ php bin/magento cache:flush
 
 ### Frontend Output showing 3 extra fields added for Newsletter
 
+<kbd>
+
 ![image1](https://user-images.githubusercontent.com/123800304/215448173-d4ae0389-5d36-42ba-ad7c-d074f15d3662.png)
 
+</kbd>
 
 ## Note : We have tested this option in Magento ver. 2.4.5-p1
